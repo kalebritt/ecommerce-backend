@@ -85,6 +85,7 @@ router.put("/:id", (req, res) => {
       id: req.params.id,
     },
   })
+  //why aren't the following being called and what are they doing?
     .then((product) => {
       // find all associated tags from ProductTag
       if (req.body.tagIds && req.body.tagIds.length) {
